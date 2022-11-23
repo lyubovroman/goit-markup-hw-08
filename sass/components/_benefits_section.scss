@@ -1,0 +1,110 @@
+.section-benefits {
+    background-color: $secondary-title-color;
+padding-top: 60px;
+padding-bottom: 60px;
+@media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+    
+}}
+
+
+
+.section-benefits__container {
+  
+
+            @media screen and (min-width: 1200px) {
+                width: 1200px;
+
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-left: 15px;
+                    padding-right: 15px;
+            }
+   
+}
+
+.section-benefits__list {
+  
+    @media (min-width: 768px) {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;}
+     @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+        
+     };
+     @media (min-width: 1200px) {
+        display: flex;
+     }
+
+}
+
+.section-benefits__item {
+    
+                 @media (min-width: 768px) {
+                     width: calc((100% - 30px) / 2);
+                     
+                 };
+                }
+
+
+
+.section-benefits__img {
+    background-color: $background-color;
+    border-radius: 4px;
+   
+}
+
+.section-benefits__icon {
+    height: 120px;
+        @media (min-width: 480px) {
+           width: 450px;
+            padding: 25px 192px;
+            };
+
+        @media (min-width: 768px) {
+           width: 354px;
+            padding: 25px 144px;
+             };
+
+        @media (min-width: 1200px) {
+width: 270px;
+           padding: 25px 100px;
+        }
+    
+}
+
+
+.section-benefits__text {
+    color: $primary-text-color;
+    line-height: 1.71;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    @media screen and (min-width: 480px) {
+           
+            text-align: justify;
+        }
+    
+        ;
+}
+
+.section-benefits__title {
+
+    text-transform: uppercase;
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+
+    @media screen and (min-width: 480px) {
+            line-height: 1.17; 
+            text-align: center;
+        };
+
+    @media screen and (min-width: 1200px) {
+            line-height: 1.14;
+                
+        };
+    
+
+}
