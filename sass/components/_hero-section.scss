@@ -1,51 +1,109 @@
 .section-hero {
+  text-align: center;
+  padding: 0;
+}
+
+
+.section-hero__overlay {
     background-color: $background-black-color;
-    text-align: center;
-    padding: 200px 0;
-    height: 600px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/css/hero-overlay.jpg);
-    background-repeat: no-repeat;
-    background-position: center;}
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay480.jpg);
+    background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 118px 0;
+    
+@media 
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx)  {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay960.jpg);
+  };
+    @media 
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay960.jpg);
+      max-width: 768px;
+    };
+        
+          @media 
+                screen and (min-width: 1200px) and (min-resolution: 192dpi),
+                screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+                  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay1200.jpg);
+                  max-width: 1600px;
+                    padding: 200px 0;
+                };
+                                
+}
 
 
 
   .section-hero__title {
-    margin: 0 auto 30px auto;
-    color: $secondary-title-color;
    
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    max-width: 696px;
+    color: $secondary-title-color;
+      margin-left: auto;
+        margin-right: auto;
+        max-width: 360px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+        letter-spacing: .06em;
+        text-align: center;
+        text-transform: uppercase;
+        
+        margin-bottom: 30px;
+        @media (min-width: 1200px) {
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.363;
+          }
     }
 
 
     .section-hero__button {
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 216px;
-    color: $secondary-title-color;
-    background-color: $accent-color;
-    font-weight: 700;
+   
+  font-weight: 700;
+    padding: 0 0;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.875;
+    background-color: $accent-color;
+    color: $secondary-title-color;
+    border: none;
+   
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    letter-spacing: .06em;
+   
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    transition-property: background-color,
+      box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    letter-spacing: 0.06em;
-
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      color: $secondary-title-color;
+      background-color: #188ce8;};
 
-            &:hover,
-            &:focus {
-                    color: $secondary-title-color;
-                    background-color: #188ce8;}
-    
+      @media (min-width: 1200px) {
+          width: 216px;
+    };
                 }
+
 
 
 

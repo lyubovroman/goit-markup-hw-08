@@ -25,28 +25,37 @@ padding-bottom: 60px;
 }
 
 .section-benefits__list {
-  
+
     @media (min-width: 768px) {
      display: flex;
      flex-wrap: wrap;
-     gap: 30px;}
+     gap: 30px;};
      @media (min-width: 1200px) {
         flex-wrap: nowrap;
-        
-     };
-     @media (min-width: 1200px) {
         display: flex;
-     }
+     };
+    
 
 }
 
 .section-benefits__item {
     
+    
                  @media (min-width: 768px) {
                      width: calc((100% - 30px) / 2);
                      
                  };
+                                   @media (max-width: 767px) {
+                                       margin-bottom: 30px;
+                
+                                   }
                 }
+.section-benefits__item:last-child  {
+    @media (max-width: 767px) {
+            margin-bottom: 0px;
+    }
+}               
+
 
 
 
@@ -58,10 +67,10 @@ padding-bottom: 60px;
 
 .section-benefits__icon {
     height: 120px;
-        @media (min-width: 480px) {
+       
            width: 450px;
             padding: 25px 192px;
-            };
+           
 
         @media (min-width: 768px) {
            width: 354px;
@@ -81,12 +90,7 @@ width: 270px;
     line-height: 1.71;
     margin-top: 0px;
     margin-bottom: 0px;
-    @media screen and (min-width: 480px) {
-           
-            text-align: justify;
-        }
-    
-        ;
+    text-align: justify;
 }
 
 .section-benefits__title {

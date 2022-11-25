@@ -21,28 +21,24 @@
             >Web<span class="logo page-header__logo">Studio</span>
           </a>
           <button
-            class="page-header__button-menu is-open"
+            class="navigation-button"
             type="button"
             aria-expanded="false"
             data-open-menu
           >
             <svg
-              class="page-header__icon"
+              class="navigation-button__icon"
               width="40"
               height="40"
               aria-label="Перемикач мобільного меню"
             >
               <use
-                class="page-header__icon-menu"
+                class="navigation-button__icon-menu"
                 href="./images/mobile-icon.svg#icon-mobile-menu"
-              ></use>
-              <use
-                class="page-header__icon-close"
-                href="./images/mobile-icon.svg#icon-mobile-close"
               ></use>
             </svg>
           </button>
-         
+
           <ul class="nav-list">
             <li class="nav-list__item">
               <a
@@ -84,17 +80,19 @@
     <!-- назві завжди маленькми буквами -->
     <main>
       <section class="section-hero">
-        <div class="container section-hero__container">
-          <h1 class="section-hero__title">
-            Ефективне рішення для вашого бізнесу
-          </h1>
-          <button
-            type="submit"
-            class="button section-hero__button"
-            data-modal-open
-          >
-            Замовити послугу
-          </button>
+        <div class="section-hero__overlay">
+          <div class="container section-hero__container">
+            <h1 class="section-hero__title">
+              Ефективне рішення для вашого бізнесу
+            </h1>
+            <button
+              type="submit"
+              class="button section-hero__button"
+              data-modal-open
+            >
+              Замовити послугу
+            </button>
+          </div>
         </div>
       </section>
 
@@ -178,39 +176,75 @@
           <h2 class="section-activities__title">Чим ми займаємося</h2>
           <ul class="section-activities__list">
             <li class="section-activities__item">
-              <article class="section-activities__img">
-                <img
-                  src="./images/hero.jpg"
-                  alt="Програмне забезпечення"
-                  width="370"
-                />
+              <div class="section-activities__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile/hero-img1.jpg    1x,
+                      ./images/mobile/hero-img1@2x.jpg 2x,
+                      ./images/mobile/hero-img1@x.jpg  3x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="picture"
+                    src="./images/mobile/hero-img1.jpg"
+                    alt="Десктопні додатки"
+                  />
+                </picture>
 
                 <div class="section-activities__action">
                   <p class="section-activities__text">Десктопні додатки</p>
                 </div>
-              </article>
+              </div>
             </li>
 
             <li class="section-activities__item">
-              <article class="section-activities__img">
-                <img
-                  src="./images/hero1.jpg"
-                  alt="Мобільні додатки та ігри"
-                  width="370"
-                />
+              <div class="section-activities__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile/hero-img2.jpg    1x,
+                      ./images/mobile/hero-img2@2x.jpg 2x,
+                      ./images/mobile/hero-img2@x.jpg  3x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="picture"
+                    src="./images/mobile/hero-img2.jpg"
+                    alt="Мобільні додатки та ігри"
+                  />
+                </picture>
+
                 <div class="section-activities__action">
                   <p class="section-activities__text">Мобільні додатки</p>
                 </div>
-              </article>
+              </div>
             </li>
 
             <li class="section-activities__item">
-              <article class="section-activities__img">
-                <img src="./images/hero2.jpg" alt="Дизайн" width="370" />
+              <div class="section-activities__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile/hero-img3.jpg    1x,
+                      ./images/mobile/hero-img3@2x.jpg 2x,
+                      ./images/mobile/hero-img3@x.jpg  3x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="picture"
+                    src="./images/mobile/hero-img3.jpg"
+                    alt="Дизайн"
+                  />
+                </picture>
+
                 <div class="section-activities__action">
                   <p class="section-activities__text">Дизайнерські рішення</p>
                 </div>
-              </article>
+              </div>
             </li>
           </ul>
         </div>
@@ -221,11 +255,22 @@
           <h2 class="section-team__title">Наша команда</h2>
           <ul class="section-team__list">
             <li class="section-team__item">
-              <img
-                src="./images/hero3.jpg"
-                alt="Хлопець в окулярах"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/team1.jpg    1x,
+                    ./images/mobile/team1@2x.jpg 2x,
+                    ./images/mobile/team1@x.jpg  3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  class="picture"
+                  src="./images/mobile/team1.jpg"
+                  alt="Хлопець в окулярах"
+                />
+              </picture>
+
               <div class="section-team__img">
                 <h3 class="section-team__name">Ігор Дем'яненко</h3>
                 <p class="section-team__text">Product Designer</p>
@@ -278,11 +323,22 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img
-                src="./images/hero4.jpg"
-                alt="Дівчина в окулярах"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/team2.jpg    1x,
+                    ./images/mobile/team2@2x.jpg 2x,
+                    ./images/mobile/team2@x.jpg  3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  class="picture"
+                  src="./images/mobile/team2.jpg"
+                  alt="Дівчина в окулярах"
+                />
+              </picture>
+
               <div class="section-team__img">
                 <h3 class="section-team__name">Ольга Рєпіна</h3>
                 <p class="section-team__text">Frontend Developer</p>
@@ -335,11 +391,22 @@
             </li>
 
             <li class="section-team__item">
-              <img
-                src="./images/hero5.jpg"
-                alt="Хлопець в світлій сорочці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/team3.jpg    1x,
+                    ./images/mobile/team3@2x.jpg 2x,
+                    ./images/mobile/team3@x.jpg  3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  class="picture"
+                  src="./images/mobile/team3.jpg"
+                  alt="Хлопець в світлій сорочці"
+                />
+              </picture>
+
               <div class="section-team__img">
                 <h3 class="section-team__name">Микола Тарасов</h3>
                 <p class="section-team__text">Marketing</p>
@@ -393,11 +460,22 @@
             </li>
 
             <li class="section-team__item">
-              <img
-                src="./images/hero6.jpg"
-                alt="Хлопець в окулярах"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/team4.jpg    1x,
+                    ./images/mobile/team4@2x.jpg 2x,
+                    ./images/mobile/team4@x.jpg  3x
+                  "
+                />
+                <img
+                  loading="lazy"
+                  class="picture"
+                  src="./images/mobile/team4.jpg"
+                  alt="Хлопець в окулярах"
+                />
+              </picture>
+
               <div class="section-team__img">
                 <h3 class="section-team__name">Михайло Єрмаков</h3>
                 <p class="section-team__text">UI Designer</p>
@@ -529,7 +607,7 @@
 
     <footer class="page-footer">
       <div class="container page-footer__container">
-       <div class="page-footer__tablet">
+        <div class="page-footer__tablet">
           <div class="page-footer__contacts">
             <a href="./index.html" class="logo" lang="en"
               >Web<span class="logo page-footer__logo">Studio</span>
@@ -671,7 +749,6 @@
               <input
                 class="checkbox__input"
                 type="checkbox"
-                class="checkbox-input"
                 name="checkbox"
                 id="checkbox"
               />
@@ -688,8 +765,47 @@
           <button type="submit" class="button modal__button">Відправити</button>
         </form>
 
-        
+        <button
+          type="submit"
+          class="button button__close--modal"
+          data-modal-close
+        >
+          <svg class="modal__icon modal__icon--close" width="11" height="11">
+            <use href="./images/icons-def-new.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+
+    <div class="mobile__backdrop" data-menu-container>
+      <div class="mobile__modal">
+        <button class="mobile__button-close" type="button" data-close-menu>
+          <svg
+            aria-label="Перемикач мобільного меню"
+            width="40px"
+            height="40px"
+          >
+            <use href="./images/mobile-icon.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile__menu-navigation">
+          <li>
+            <a
+              href="./index.html"
+              class="mobile__menu-link mobile__menu-link--curent"
+              >Студія</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile__menu-link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="#" class="mobile__menu-link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
   </body>
