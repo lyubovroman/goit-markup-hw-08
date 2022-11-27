@@ -5,42 +5,54 @@
 
 
 .section-hero__overlay {
-    background-color: $background-black-color;
     display: flex;
       justify-content: center;
       align-items: center;
       margin-left: auto;
       margin-right: auto;
       max-width: 480px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay480.jpg);
-    background-size: cover;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay-mob.jpg);
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       padding: 118px 0;
     
-@media 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx)  {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay960.jpg);
-  };
-    @media 
-    screen and (min-width: 768px) and (min-resolution: 192dpi),
-    screen and (min-width: 768px) and (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay960.jpg);
+  screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay-mob@2x.jpg);
+  };}
+
+   .section-hero__overlay {
+    @media (min-width:768px) {
       max-width: 768px;
-    };
-        
-          @media 
-                screen and (min-width: 1200px) and (min-resolution: 192dpi),
-                screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-                  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay1200.jpg);
-                  max-width: 1600px;
-                    padding: 200px 0;
-                };
-                                
-}
-
-
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay-tab.jpg);
+      
+    @media screen and (min-device-pixel-ratio:2),
+      screen  and (min-resolution: 192dpi),
+      screen  and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay-tab@2x.jpg);
+       
+      }
+    
+      ;
+  }}
+   .section-hero__overlay {
+    @media (min-width:1200px) {
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay-desk.jpg);
+    @media screen and (min-device-pixel-ratio:2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/overlay-desk@2x.jpg);
+        max-width: 1600px;
+        padding: 200px 0;
+      }
+    
+      ;
+  }}
+   
 
   .section-hero__title {
    

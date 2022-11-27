@@ -21,6 +21,23 @@
           <a href="./index.html" class="logo" lang="en"
             >Web<span class="logo page-header__logo">Studio</span>
           </a>
+          <button
+            class="navigation-button js-open-menu"
+            type="button"
+            aria-expanded="false"
+          >
+            <svg
+              class="navigation-button__icon"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="navigation-button__icon-menu"
+                href="./images/mobile-icon.svg#icon-mobile-menu"
+              ></use>
+            </svg>
+          </button>
 
           <ul class="nav-list">
             <li class="nav-list__item">
@@ -318,68 +335,70 @@
 
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div class="page-footer__contacts">
-          <a href="./index.html" class="logo" lang="en"
-            >Web<span class="logo page-footer__logo">Studio</span>
-          </a>
+        <div class="page-footer__tablet">
+          <div class="page-footer__contacts">
+            <a href="./index.html" class="logo" lang="en"
+              >Web<span class="logo page-footer__logo">Studio</span>
+            </a>
 
-          <address>
-            <ul class="page-footer__address">
-              <li class="page-footer__contacts">
-                <a
-                  href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="page-footer__address"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+            <address>
+              <ul class="page-footer__address">
+                <li class="page-footer__contacts">
+                  <a
+                    href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="page-footer__address"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="page-footer__contacts">
+                  <a href="mailto:info@devstudio.com" class="page-footer__mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="page-footer__contacts">
+                  <a href="tel:+380961111111" class="page-footer__phone"
+                    >+380961111111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="subscription">
+            <b class="subscription__title">ПРИЄДНУЙТЕСЬ</b>
+            <ul class="subscription__list">
+              <li class="subscription-item">
+                <a href="#" class="subscription__link">
+                  <svg class="social-link" width="20" height="20">
+                    <use href="./images/icons-def.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="page-footer__contacts">
-                <a href="mailto:info@devstudio.com" class="page-footer__mail"
-                  >info@devstudio.com</a
-                >
+              <li class="subscription-item">
+                <a href="#" class="subscription__link">
+                  <svg class="social-link" width="20" height="20">
+                    <use href="./images/icons-def.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="page-footer__contacts">
-                <a href="tel:+380961111111" class="page-footer__phone"
-                  >+380961111111</a
-                >
+              <li class="subscription-item">
+                <a href="#" class="subscription__link">
+                  <svg class="social-link" width="20" height="20">
+                    <use href="./images/icons-def.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="subscription-item">
+                <a href="#" class="subscription__link">
+                  <svg class="social-link" width="20" height="20">
+                    <use href="./images/icons-def.svg#icon-link"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="subscription">
-          <b class="subscription__title">ПРИЄДНУЙТЕСЬ</b>
-          <ul class="subscripton__list">
-            <li class="subscription-item">
-              <a href="#" class="subscription__link">
-                <svg class="social-link" width="20" height="20">
-                  <use href="./images/icons-def.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="subscription-item">
-              <a href="#" class="subscription__link">
-                <svg class="social-link" width="20" height="20">
-                  <use href="./images/icons-def.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="subscription-item">
-              <a href="#" class="subscription__link">
-                <svg class="social-link" width="20" height="20">
-                  <use href="./images/icons-def.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="subscription-item">
-              <a href="#" class="subscription__link">
-                <svg class="social-link" width="20" height="20">
-                  <use href="./images/icons-def.svg#icon-link"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="join">
@@ -404,6 +423,74 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu__container">
+        <button class="navigation-button js-close-menu" type="button">
+          <svg
+            aria-label="Перемикач мобільного меню"
+            width="40px"
+            height="40px"
+          >
+            <use href="./images/mobile-icon.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__menu-navigation">
+          <li>
+            <a
+              href="./index.html"
+              class="mobile-menu__menu-link mobile-menu__menu-link--current"
+              >Студія</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__menu-link"
+              >Портфоліо</a
+            >
+          </li>
+          <li>
+            <a href="#" class="mobile-menu__menu-link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__info-list">
+          <li class="mobile-menu__info-list--item">
+            <a
+              href="tel:+380961111111"
+              class="info-list__link info-list__link--tel"
+            >
+              +38(096)111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__info-list--item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="info-list__link info-list__link--mail"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__socials--items">
+            <a class="mobile-menu__socials--links" href="#">Instagram </a>
+            <span class="mobile-menu__socials--line"></span>
+          </li>
+          <li class="mobile-menu__socials--items">
+            <a class="mobile-menu__socials--links" href="#">Twitter </a>
+            <span class="mobile-menu__socials--line"></span>
+          </li>
+          <li class="mobile-menu__socials--items">
+            <a class="mobile-menu__socials--links" href="#">Facebook </a>
+            <span class="mobile-menu__socials--line"></span>
+          </li>
+          <li class="mobile-menu__socials--items">
+            <a class="mobile-menu__socials--links" href="#">Linkedine </a>
+            <span class="mobile-menu__socials--line"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
