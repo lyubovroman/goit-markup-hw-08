@@ -76,19 +76,10 @@
 
 
 .social-list {
-    display: flex;
-    margin-top: 16px;
-    gap: 10px;
-    border-radius: 50%;
-    padding-left: 122px;
-    @media (min-width: 768px) {
-        padding-left: 74px;
-           
-    };
+        display: flex;
+            justify-content: center;
+            gap: 10px;
  
-    @media (min-width: 1200px) {
-    padding-left: 32px;
-    }
 }
 
 

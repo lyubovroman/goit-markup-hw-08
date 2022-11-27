@@ -194,9 +194,9 @@ font-weight: 700;
 }
 
 .join__form {
-    @media (min-width: 480px) {
+   
             display: block;
-        }
+       
     
         ;
          @media (min-width: 1200px) {
@@ -223,8 +223,8 @@ font-weight: 700;
         &::placeholder {
             color: rgba(255, 255, 255, 0.6);
         };
-    @media (min-width: 480px) {
-            width: 100%};
+    
+            width: 100%;
    @media (min-width: 768px) {
        width: 450px;
    }
@@ -278,8 +278,11 @@ font-weight: 700;
 }
 
 .join__icon {
-    @media (min-width: 480px) {margin-left: 12px;};
+   margin-left: 12px;;
     
     display: block;
-    margin-left: 10px;
+    @media (min-width:1200px) {
+        margin-left: 10px;
+    }
+    
 }

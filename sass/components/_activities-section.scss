@@ -1,8 +1,8 @@
 .section-activities {
     background-color: $secondary-title-color;
-@media screen and (min-width: 480px) {
+
        display: none;
-    };
+   
     @media (min-width: 1200px) {
         display: flex;
         flex-wrap: wrap;

@@ -1,8 +1,23 @@
+.section-portfolio {
+    @media (max-width:1199px) {
+        padding-top: 66px;
+        
+    }
+}
 .portfolio-services {
-    display: flex;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px 8px;
+   margin-bottom: 46px;
+    @media (min-width:768px) {
+   
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+   
+    margin-bottom: 30px;};
+    @media (min-width:1200px) {
+        margin-bottom: 50px;
+        
+    }
 
 
     &:first-child {
@@ -10,12 +25,7 @@
 }}
 
 
-.portfolio-services__item {
-    margin-right: 8px;
 
-    &:last-child {
-            margin-right: 0px;}
-}
 
 
 

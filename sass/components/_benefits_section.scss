@@ -93,6 +93,10 @@ height: 70px;
    
             line-height: 1.17; 
             text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+                
+            };
        
 
     @media screen and (min-width: 1200px) {
