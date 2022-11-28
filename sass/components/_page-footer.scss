@@ -47,7 +47,7 @@
    
    
 
-.page-footer__contacts:not(:last-child) {
+.page-footer__info:not(:last-child) {
     @media (max-width:1199px){
     margin-bottom: 8px;
     };
@@ -232,6 +232,7 @@ font-weight: 700;
    ;
         @media (min-width: 1200px) {
             width: 358px;
+            margin-bottom: 0;
         }
     
         ;

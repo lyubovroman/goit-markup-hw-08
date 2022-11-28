@@ -1,16 +1,16 @@
 .section-portfolio {
     @media (max-width:1199px) {
-        padding-top: 66px;
-        
+        padding: 60px 0;
     }
+ 
 }
 .portfolio-services {
    display: flex;
    flex-wrap: wrap;
    gap: 15px 8px;
-   margin-bottom: 46px;
+   margin-bottom: 40px;
     @media (min-width:768px) {
-   
+margin-bottom: 30px;
     justify-content: center;
    
     margin-bottom: 30px;};

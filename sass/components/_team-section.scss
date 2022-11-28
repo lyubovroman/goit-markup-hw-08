@@ -55,7 +55,12 @@
 
 .section-team__img {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    @media (min-width:1200px) {
+        padding-bottom: 30px;
+    }
+
+    
 }
 
 .section-team__name {
@@ -70,6 +75,7 @@
     color: $primary-text-color;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 16px;
    
 } 
 
